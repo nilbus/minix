@@ -15,6 +15,7 @@ _PROTOTYPE( void sendmask_dmp, (void)					);
 _PROTOTYPE( void image_dmp, (void)					);
 _PROTOTYPE( void irqtab_dmp, (void)					);
 _PROTOTYPE( void kmessages_dmp, (void)					);
+_PROTOTYPE( void unity_dmp, (void)					);
 _PROTOTYPE( void sched_dmp, (void)					);
 _PROTOTYPE( void monparams_dmp, (void)					);
 _PROTOTYPE( void kenv_dmp, (void)					);
