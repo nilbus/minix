@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/minix/!svn/ver/2394/branches/b3_1_2/src/kernel
+END
+klib.s
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/klib.s
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/proto.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/config.h
+END
+sconst.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/sconst.h
+END
+ipc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/ipc.h
+END
+system.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system.c
+END
+kernel.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/kernel.h
+END
+type.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/type.h
+END
+debug.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/debug.c
+END
+glo.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/glo.h
+END
+system.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system.h
+END
+debug.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/debug.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/Makefile
+END
+exception.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/exception.c
+END
+klib386.s
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/klib386.s
+END
+utility.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/utility.c
+END
+proc.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/proc.c
+END
+mpx88.s
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/mpx88.s
+END
+proc.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/proc.h
+END
+kprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/kprintf.c
+END
+i8259.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/kernel/i8259.c
+END
+protect.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/kernel/protect.c
+END
+klib88.s
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/klib88.s
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/kernel/main.c
+END
+mpx.s
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/mpx.s
+END
+mpx386.s
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/mpx386.s
+END
+priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/priv.h
+END
+protect.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/protect.h
+END
+table.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2394/branches/b3_1_2/src/kernel/table.c
+END
+const.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/const.h
+END
+clock.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/clock.c
+END
+start.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/kernel/start.c
+END

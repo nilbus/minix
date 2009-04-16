@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/net
+END
+ioctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/net/ioctl.h
+END
+netlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/net/netlib.h
+END
+if.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/net/if.h
+END
+hton.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/net/hton.h
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/netinet
+END
+in.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/netinet/in.h
+END
+tcp.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/netinet/tcp.h
+END

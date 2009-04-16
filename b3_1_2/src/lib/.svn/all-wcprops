@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/lib
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/Makefile.in
+END
+generate.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/generate.sh
+END
+Makedepend-gnu
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/Makedepend-gnu
+END
+.depend-gnu
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/.depend-gnu
+END
+Makedepend-ack
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/Makedepend-ack
+END
+.depend-ack
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/.depend-ack
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/README
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/Makefile
+END

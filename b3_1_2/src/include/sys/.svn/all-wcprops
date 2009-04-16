@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys
+END
+uio.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/uio.h
+END
+ioc_memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_memory.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/types.h
+END
+wait.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/wait.h
+END
+mtio.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/mtio.h
+END
+ioc_file.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_file.h
+END
+ioctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioctl.h
+END
+ioc_tty.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_tty.h
+END
+stat.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/stat.h
+END
+svrctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/svrctl.h
+END
+select.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/select.h
+END
+un.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/un.h
+END
+ioc_tape.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_tape.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/resource.h
+END
+ioc_scsi.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_scsi.h
+END
+ioc_cmos.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_cmos.h
+END
+time.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/time.h
+END
+param.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/param.h
+END
+statfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/statfs.h
+END
+utsname.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/utsname.h
+END
+asynchio.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/asynchio.h
+END
+dir.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/dir.h
+END
+ptrace.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ptrace.h
+END
+file.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/file.h
+END
+times.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/times.h
+END
+vm.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/vm.h
+END
+ioc_sound.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_sound.h
+END
+ioc_disk.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/ioc_disk.h
+END
+sigcontext.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/sigcontext.h
+END
+socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/socket.h
+END
+kbdio.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sys/kbdio.h
+END

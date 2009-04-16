@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet
+END
+inet.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/inet.c
+END
+sha2.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/sha2.h
+END
+mnx_eth.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/mnx_eth.c
+END
+sr_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/sr_int.h
+END
+inet.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/inet.h
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/proto.h
+END
+buf.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/buf.c
+END
+mq.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/mq.c
+END
+osdep_eth.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/osdep_eth.h
+END
+qp.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/qp.c
+END
+mq.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/mq.h
+END
+stacktrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/stacktrace.c
+END
+sr.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/sr.c
+END
+inet_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/inet_config.c
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/version.c
+END
+qp.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/qp.h
+END
+inet_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/inet_config.h
+END
+const.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/const.h
+END
+clock.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/clock.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/Makefile
+END
+sha2.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/inet/sha2.c
+END

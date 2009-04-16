@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm
+END
+partition.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/partition.h
+END
+diskparm.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/diskparm.h
+END
+pci.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/pci.h
+END
+bios.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/bios.h
+END
+interrupt.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/interrupt.h
+END
+portio.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/portio.h
+END
+cmos.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/cmos.h
+END
+cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/cpu.h
+END
+ports.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/ports.h
+END
+int86.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/int86.h
+END
+memory.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ibm/memory.h
+END

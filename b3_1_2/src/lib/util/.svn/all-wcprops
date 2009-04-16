@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/util
+END
+openpty.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/util/openpty.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/util/Makefile.in
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/build
+END
+input.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/input.c
+END
+archive.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/archive.c
+END
+macro.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/macro.c
+END
+reader.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/reader.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/main.c
+END
+rules.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/rules.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/Makefile
+END
+h.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/h.h
+END
+check.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/check.c
+END
+make.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/commands/make/make.c
+END

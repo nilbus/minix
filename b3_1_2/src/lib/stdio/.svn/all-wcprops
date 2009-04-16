@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio
+END
+freopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/freopen.c
+END
+ferror.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/ferror.c
+END
+fputs.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fputs.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/Makefile.in
+END
+printf.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/printf.c
+END
+vsscanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/vsscanf.c
+END
+doscan.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/doscan.c
+END
+fgetpos.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fgetpos.c
+END
+fgets.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fgets.c
+END
+perror.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/perror.c
+END
+putc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/putc.c
+END
+fileno.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fileno.c
+END
+getchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/getchar.c
+END
+sscanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/sscanf.c
+END
+setvbuf.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/setvbuf.c
+END
+feof.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/feof.c
+END
+getc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/getc.c
+END
+fsetpos.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fsetpos.c
+END
+ungetc.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/ungetc.c
+END
+setbuf.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/setbuf.c
+END
+puts.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/puts.c
+END
+mktemp.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/mktemp.c
+END
+fseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fseek.c
+END
+vfprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/vfprintf.c
+END
+clearerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/clearerr.c
+END
+tmpfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/tmpfile.c
+END
+fscanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fscanf.c
+END
+fwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fwrite.c
+END
+ecvt.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/ecvt.c
+END
+gets.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/gets.c
+END
+doprnt.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/doprnt.c
+END
+ftell.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/ftell.c
+END
+putchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/putchar.c
+END
+fopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fopen.c
+END
+fprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fprintf.c
+END
+data.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/data.c
+END
+fclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fclose.c
+END
+vsprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/vsprintf.c
+END
+flushbuf.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/flushbuf.c
+END
+vscanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/vscanf.c
+END
+fread.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fread.c
+END
+fputc.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fputc.c
+END
+fillbuf.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fillbuf.c
+END
+icompute.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/icompute.c
+END
+sprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/sprintf.c
+END
+loc_incl.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/loc_incl.h
+END
+fflush.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fflush.c
+END
+fgetc.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/fgetc.c
+END
+rewind.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/rewind.c
+END
+vprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/vprintf.c
+END
+scanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/scanf.c
+END
+tmpnam.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/tmpnam.c
+END
+remove.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/stdio/remove.c
+END

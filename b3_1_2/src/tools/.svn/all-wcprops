@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/minix/!svn/ver/2157/branches/b3_1_2/src/tools
+END
+chrootmake.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/tools/chrootmake.sh
+END
+tell_config
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/tools/tell_config
+END
+release.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2156/branches/b3_1_2/src/tools/release.sh
+END
+mkboot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/tools/mkboot
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/tools/Makefile
+END
+issue.install
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/tools/issue.install
+END

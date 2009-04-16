@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/minix/!svn/ver/2160/branches/b3_1_2/src/include
+END
+pwd.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/pwd.h
+END
+ansi.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ansi.h
+END
+regexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/regexp.h
+END
+alloca.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/alloca.h
+END
+netdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/netdb.h
+END
+mathconst.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/mathconst.h
+END
+limits.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/limits.h
+END
+timers.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/timers.h
+END
+float.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/float.h
+END
+stdint.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/stdint.h
+END
+fcntl.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/fcntl.h
+END
+string.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/string.h
+END
+stddef.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/stddef.h
+END
+syslog.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/syslog.h
+END
+stdlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/include/stdlib.h
+END
+stdio.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/stdio.h
+END
+utime.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/utime.h
+END
+utmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/utmp.h
+END
+dirent.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/dirent.h
+END
+a.out.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/a.out.h
+END
+ttyent.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ttyent.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/Makefile
+END
+grp.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/grp.h
+END
+env.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/env.h
+END
+strings.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/strings.h
+END
+math.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/math.h
+END
+termcap.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/termcap.h
+END
+sysexits.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sysexits.h
+END
+fts.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/fts.h
+END
+time.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/time.h
+END
+locale.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/locale.h
+END
+libgen.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/libgen.h
+END
+tools.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/tools.h
+END
+assert.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/include/assert.h
+END
+setjmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/setjmp.h
+END
+libutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/libutil.h
+END
+curses.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/curses.h
+END
+configfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/configfile.h
+END
+lib.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/lib.h
+END
+unistd.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/unistd.h
+END
+regex.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/regex.h
+END
+sgtty.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/sgtty.h
+END
+ifaddrs.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ifaddrs.h
+END
+signal.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/signal.h
+END
+inttypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/inttypes.h
+END
+termios.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/termios.h
+END
+ctype.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/ctype.h
+END
+stdarg.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/stdarg.h
+END
+errno.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/errno.h
+END
+tar.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/include/tar.h
+END

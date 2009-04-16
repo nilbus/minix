@@ -1,0 +1,593 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix
+END
+_waitpid.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_waitpid.c
+END
+_tcgetattr.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_tcgetattr.c
+END
+_access.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_access.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/Makefile.in
+END
+_cfsetospeed.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_cfsetospeed.c
+END
+_closedir.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_closedir.c
+END
+_uname.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_uname.c
+END
+_close.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_close.c
+END
+_rename.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_rename.c
+END
+_sleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sleep.c
+END
+_ioctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_ioctl.c
+END
+_mkfifo.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_mkfifo.c
+END
+_sync.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sync.c
+END
+_tcsetattr.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_tcsetattr.c
+END
+_sigsuspend.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sigsuspend.c
+END
+_umount.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_umount.c
+END
+_alarm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_alarm.c
+END
+_link.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_link.c
+END
+_tcflow.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_tcflow.c
+END
+_unlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_unlink.c
+END
+_mknod.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_mknod.c
+END
+_getpgrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getpgrp.c
+END
+__exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/__exit.c
+END
+_fpathconf.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_fpathconf.c
+END
+_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_read.c
+END
+_getcwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getcwd.c
+END
+getloadavg.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/getloadavg.c
+END
+_select.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_select.c
+END
+_execve.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_execve.c
+END
+_execlp.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_execlp.c
+END
+_sigaction.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sigaction.c
+END
+_umask.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_umask.c
+END
+_times.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_times.c
+END
+_fstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_fstat.c
+END
+_sigprocmask.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sigprocmask.c
+END
+_cfgetispeed.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_cfgetispeed.c
+END
+_tcdrain.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_tcdrain.c
+END
+_symlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_symlink.c
+END
+_lstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_lstat.c
+END
+_dup.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_dup.c
+END
+_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_write.c
+END
+_chmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_chmod.c
+END
+_getppid.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getppid.c
+END
+_time.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_time.c
+END
+_cfsetispeed.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_cfsetispeed.c
+END
+_chroot.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_chroot.c
+END
+_creat.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_creat.c
+END
+_execl.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_execl.c
+END
+getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/getopt.c
+END
+_sigsetjmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sigsetjmp.c
+END
+_fcntl.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_fcntl.c
+END
+_tcflush.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_tcflush.c
+END
+_getegid.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getegid.c
+END
+_fstatfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_fstatfs.c
+END
+_execv.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_execv.c
+END
+_isatty.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_isatty.c
+END
+_chown.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_chown.c
+END
+_ptrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_ptrace.c
+END
+_getgroups.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getgroups.c
+END
+_stime.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_stime.c
+END
+gettimeofday.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/gettimeofday.c
+END
+_sigreturn.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sigreturn.c
+END
+_fsync.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_fsync.c
+END
+_utime.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_utime.c
+END
+_truncate.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_truncate.c
+END
+_geteuid.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_geteuid.c
+END
+_readlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_readlink.c
+END
+_pipe.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_pipe.c
+END
+_sigset.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sigset.c
+END
+usleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/usleep.c
+END
+_opendir.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_opendir.c
+END
+_open.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_open.c
+END
+_fork.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_fork.c
+END
+_pathconf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_pathconf.c
+END
+_mount.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_mount.c
+END
+_lseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_lseek.c
+END
+_getgid.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getgid.c
+END
+_wait.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_wait.c
+END
+_execle.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_execle.c
+END
+_mkdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_mkdir.c
+END
+_readdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_readdir.c
+END
+_dup2.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_dup2.c
+END
+_stat.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_stat.c
+END
+_getpid.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getpid.c
+END
+_rmdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_rmdir.c
+END
+_pause.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_pause.c
+END
+_setgid.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_setgid.c
+END
+_getuid.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_getuid.c
+END
+priority.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/priority.c
+END
+_tcsendbreak.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_tcsendbreak.c
+END
+_rewinddir.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_rewinddir.c
+END
+_sigpending.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_sigpending.c
+END
+_cfgetospeed.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_cfgetospeed.c
+END
+_chdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_chdir.c
+END
+_execvp.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_execvp.c
+END
+_setsid.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_setsid.c
+END
+_kill.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_kill.c
+END
+_setuid.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/posix/_setuid.c
+END

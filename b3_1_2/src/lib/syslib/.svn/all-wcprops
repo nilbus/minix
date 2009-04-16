@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib
+END
+pci_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_init.c
+END
+sys_fork.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_fork.c
+END
+sys_umap.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_umap.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/Makefile.in
+END
+sys_in.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_in.c
+END
+sys_out.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_out.c
+END
+sys_int86.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_int86.c
+END
+sys_setalarm.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_setalarm.c
+END
+sys_vinl.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_vinl.c
+END
+sys_exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_exit.c
+END
+sys_endsig.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_endsig.c
+END
+sys_eniop.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_eniop.c
+END
+pci_find_dev.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_find_dev.c
+END
+syslib.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/syslib.h
+END
+sys_svrctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_svrctl.c
+END
+sys_physcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_physcopy.c
+END
+sys_nice.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_nice.c
+END
+pci_slot_name.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_slot_name.c
+END
+sys_vm_map.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_vm_map.c
+END
+sys_segctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_segctl.c
+END
+pci_init1.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_init1.c
+END
+sys_sigreturn.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_sigreturn.c
+END
+sys_getsig.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_getsig.c
+END
+sys_vinw.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_vinw.c
+END
+sys_privctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_privctl.c
+END
+pci_attr_w8.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_attr_w8.c
+END
+sys_newmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_newmap.c
+END
+sys_vircopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_vircopy.c
+END
+sys_kill.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_kill.c
+END
+panic.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/panic.c
+END
+pci_attr_r32.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_attr_r32.c
+END
+sys_irqctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_irqctl.c
+END
+pci_attr_r16.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_attr_r16.c
+END
+sys_voutb.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_voutb.c
+END
+taskcall.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/taskcall.c
+END
+pci_attr_w32.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_attr_w32.c
+END
+assert.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/assert.c
+END
+pci_attr_w16.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_attr_w16.c
+END
+sys_abort.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_abort.c
+END
+pci_reserve.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_reserve.c
+END
+pci_next_dev.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_next_dev.c
+END
+sys_voutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_voutl.c
+END
+pci_dev_name.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_dev_name.c
+END
+pci_ids.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_ids.c
+END
+pci_attr_r8.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_attr_r8.c
+END
+pci_rescan_bus.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_rescan_bus.c
+END
+sys_times.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_times.c
+END
+pci.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci.h
+END
+pci_first_dev.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/pci_first_dev.c
+END
+sys_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_exec.c
+END
+sys_voutw.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_voutw.c
+END
+sys_sdevio.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_sdevio.c
+END
+sys_memset.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_memset.c
+END
+sys_vm_setbuf.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_vm_setbuf.c
+END
+sys_getinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_getinfo.c
+END
+sys_sigsend.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_sigsend.c
+END
+sys_trace.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_trace.c
+END
+sys_vinb.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/syslib/sys_vinb.c
+END

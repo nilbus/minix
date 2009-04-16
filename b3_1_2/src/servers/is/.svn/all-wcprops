@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/servers/is
+END
+inc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/inc.h
+END
+dmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/dmp.c
+END
+dmp_kernel.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/servers/is/dmp_kernel.c
+END
+is.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/is.h
+END
+dmp_rs.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/dmp_rs.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/main.c
+END
+dmp_ds.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/dmp_ds.c
+END
+glo.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/glo.h
+END
+dmp_fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/dmp_fs.c
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/proto.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/Makefile
+END
+dmp_pm.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/servers/is/dmp_pm.c
+END

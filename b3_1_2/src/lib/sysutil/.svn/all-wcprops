@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil
+END
+taskcall.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/taskcall.c
+END
+fkey_ctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/fkey_ctl.c
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/Makefile.in
+END
+sysutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/sysutil.h
+END
+env_panic.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/env_panic.c
+END
+env_parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/env_parse.c
+END
+kmalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/kmalloc.c
+END
+getuptime.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/getuptime.c
+END
+env_get_prm.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/env_get_prm.c
+END
+env_prefix.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/env_prefix.c
+END
+kputc.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/kputc.c
+END
+tickdelay.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/tickdelay.c
+END
+report.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/report.c
+END
+kprintf.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/lib/sysutil/kprintf.c
+END

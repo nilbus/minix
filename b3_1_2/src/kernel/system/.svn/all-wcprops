@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/kernel/system
+END
+do_times.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_times.c
+END
+do_vm.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_vm.c
+END
+do_exec.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_exec.c
+END
+do_endksig.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_endksig.c
+END
+do_sdevio.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_sdevio.c
+END
+do_memset.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_memset.c
+END
+do_vm_setbuf.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_vm_setbuf.c
+END
+do_getinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_getinfo.c
+END
+do_sigsend.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_sigsend.c
+END
+do_trace.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_trace.c
+END
+do_fork.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_fork.c
+END
+do_umap.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_umap.c
+END
+do_unused.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_unused.c
+END
+do_setalarm.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_setalarm.c
+END
+do_int86.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_int86.c
+END
+do_exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_exit.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/Makefile
+END
+do_nice.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_nice.c
+END
+do_segctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2159/branches/b3_1_2/src/kernel/system/do_segctl.c
+END
+do_sigreturn.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_sigreturn.c
+END
+do_privctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_privctl.c
+END
+do_newmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_newmap.c
+END
+do_kill.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_kill.c
+END
+do_vdevio.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_vdevio.c
+END
+do_getksig.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_getksig.c
+END
+do_iopenable.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_iopenable.c
+END
+do_irqctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_irqctl.c
+END
+do_vcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_vcopy.c
+END
+do_devio.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_devio.c
+END
+do_abort.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_abort.c
+END
+do_copy.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/minix/!svn/ver/2143/branches/b3_1_2/src/kernel/system/do_copy.c
+END
