@@ -624,6 +624,17 @@ int *front;					/* return: front or back */
   *front = time_left;
 }
 
+PRIVATE int random_int(int range) {
+	static unsigned long seed = 1;
+	if (seed == 1) seed = get_uptime();
+	seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+	return (int)(seed % range);
+}
+
+PRIVATE int proc_tickets(struct proc *p) {
+	return 2^(-(p->p_priority) + MIN_USER_Q);
+}
+
 /*===========================================================================*
  *				pick_proc				     * 
  *===========================================================================*/
@@ -631,21 +642,45 @@ PRIVATE void pick_proc()
 {
 /* Decide who to run now.  A new process is selected by setting 'next_ptr'.
  * When a billable process is selected, record it in 'bill_ptr', so that the 
- * clock task can tell who to bill for system time.
- */
-  register struct proc *rp;			/* process to run */
-  int q;					/* iterate over queues */
+ * clock task can tell who to bill for system time. */
+  register struct proc *rp;				/* process to run */
+  int q, i;								/* iterate over queues */
+  long ticket_count = 0;				/* ticket count */
+  long winner;							/* winning ticket */
 
   /* Check each of the scheduling queues for ready processes. The number of
    * queues is defined in proc.h, and priorities are set in the task table.
    * The lowest queue contains IDLE, which is always ready.
    */
   for (q=0; q < NR_SCHED_QUEUES; q++) {	
-      if ( (rp = rdy_head[q]) != NIL_PROC) {
-          next_ptr = rp;			/* run process 'rp' next */
-          if (priv(rp)->s_flags & BILLABLE)	 	
-              bill_ptr = rp;			/* bill for system time */
-          return;				 
+      if ((rp = rdy_head[q]) != NIL_PROC) {
+		  if (q >= USER_Q && q <= MIN_USER_Q) {
+			  /* Use lottery scheduler for user queues > USER_Q */
+			  while (rp != NIL_PROC) {
+				  ticket_count += proc_tickets(rp);
+				  rp = rp->p_nextready;
+			  }
+		  } else {
+			  if (q == IDLE_Q && ticket_count > 0) {
+				  /* Choose the winning ticket */
+				  winner = random_int(ticket_count);
+				  for (i = USER_Q; i <= MIN_USER_Q; i++) {
+					  rp = rdy_head[i];
+					  while (rp != NIL_PROC) {
+						  winner -= proc_tickets(rp);
+						  if (winner < 0)
+							  break;
+						  rp = rp->p_nextready;
+					  }
+					  if (winner < 0)
+						  break;
+				  }
+			  }
+			  next_ptr = rp;					/* run process 'rp' next */
+			  if (priv(rp)->s_flags & BILLABLE)
+				  bill_ptr = rp;				/* bill for system time */
+			  return;
+		  }
       }
   }
 }
