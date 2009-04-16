@@ -1,0 +1,6 @@
+./prodconinit
+./consumer
+./producer
+
+voila!  Consumer and producer produce and consume every second.
+They use semaphore 0.
