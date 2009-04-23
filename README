@@ -1,0 +1,130 @@
+                              CSC 246: Homework 3
+
+   --------------------------------------------------------------------------
+
+Due: See home [1]page.
+
+   --------------------------------------------------------------------------
+
+                             Project 3: Semaphores
+
+   Students will create semaphores that can be used by user-space processes
+   and a producer-consumer program that uses semaphores.
+
+   Add an array of 10 semaphores (using a "constant" such as #define
+   NUM_SEMAPHORES 10) to the MM (memory manager) PM (process manager) task.
+   Users will be able to access this array through the following four new
+   system calls. The function prototypes for these calls will go in the file:
+
+     /usr/include/minix/semaphore.h
+
+   The following list describes the new system calls.
+
+     * int sem_down(int sem_num);
+       Performs the down (aka P or acquire) operation on the sem_num^th
+       semaphore in the array. This routine may block. It will return 0 on
+       success (whether it blocks or not). It returns -1 on failure, such as
+       sem_num out of range.
+     * int sem_up(int sem_num);
+       Performs the up (aka V or release) operation on the sem_num^th
+       semaphore in the array. It will return 0 on success. It returns -1 on
+       failure.
+     * int sem_init(int sem_num, int value);
+       Set the sem_num^th semaphore in the array to value, which must be
+       non-negative. It returns 0 on success, -1 on failure.
+     * int sem_status(int sem_num, int *value, int *num_blocked);
+       Copies the value of the sem_num^th semaphore in the array to memory
+       location pointed to by value. Also, copies the number of processes
+       blocked on the semaphore to the memory pointed to by num_blocked. It
+       returns 0 on success, -1 on failure.
+
+   Because MM PM cannot be interrupted by a user process there is no need to
+   add synchronization (eg, mutex) to these system calls. In other words, MM
+   PM operations are atomic with respect to user processes.
+
+   The second part of the assignment is to provide a producer-consumer
+   application that uses semaphores. There are three programs.
+
+     * prodconsinit
+       This program will use a shared file to buffer the values that the
+       producer and later consumed. It will use another file to hold any
+       state variables. This program will open and initialize the necessary
+       shared files. It also initializes the semaphores. It takes (at least)
+       one argument that is the size of the buffer.
+     * producer
+       Creates one element and appends it to the buffer. (Hint: see the
+       O_APPEND flag to the open system call.) It blocks if the buffer is
+       full. It prints the element that was created.
+     * consumer
+       Removes the element at the head of the buffer. It blocks if the buffer
+       is empty. It prints the element that was removed.
+
+   The producer and consumer must manipulate semaphores appropriately.
+   Provide a README file to explain how to use this application.
+
+   [2]This file is provided to give an idea (not the only idea) for reading
+   and writing integers to files.
+
+   --------------------------------------------------------------------------
+
+Adding a system call
+
+   This assignment requires four new system calls. There are [3]numerous
+   online resources explaining how to do this. The [4]top hit is quite
+   comprehensive and easy to read.
+
+   There are two parts to a system call. One is the system call handler,
+   which resides in the kernel. The other is the user-level library, which
+   invokes the system call. Most Minix system calls are handled by a server.
+   For this assignment, the new system calls will go in the MM PM server.
+
+   A program, [5]semtest.c, is available to test the semaphore system calls.
+   It was compiled on Minix, but not using the semaphore system calls. While
+   it compiles and "runs" in the test configuration, it comes with no
+   warranty.
+
+   --------------------------------------------------------------------------
+
+Requirements
+
+   This assignment has two requirements.
+
+  System calls:
+  Four new system calls, sem_down, sem_up, sem_init, and sem_status, added to
+  the MM PM server.
+
+  Producer-consumer application:
+  A producer-consumer application consisting of three programs, prodconsinit,
+  producer, and consumer, that use the above semaphore system calls.
+
+   --------------------------------------------------------------------------
+
+Testing
+
+   As usual, a good-faith effort that compiles and does no harm is half the
+   battle. Therefore, the first part of our evaluation will establish that
+   and earns approximately 50%. The second part tests the four new system
+   calls. System calls that work to perfection earn approximately 30% more.
+   This will be determined solely using [6]semtest.c. The producer-consumer
+   application will earn the last 20% (approx.). However, if this application
+   is not submitted, or if it is deemed to not be a good-faith effort, points
+   may be deducted.
+
+   --------------------------------------------------------------------------
+
+Grading
+
+The weighting of this assignment for the course is given in [7]policies.
+
+   --------------------------------------------------------------------------
+
+References
+
+   Visible links
+   1. file:///home/nilbus/index.html
+   2. file:///home/nilbus/git/minix/readwrite.c
+   3. http://www.google.com/search?hl=en&client=firefox-a&rls=com.ubuntu:en-US:unofficial&ei=5suSSaWPCM3dtgeOscjWCw&sa=X&oi=spell&resnum=1&ct=result&cd=1&q=minix3+add+system+call&spell=1
+   4. http://www.cis.syr.edu/~wedu/seed/Documentation/Minix3/How_to_add_system_call.pdf
+   5. file:///home/nilbus/git/minix/semtest.c
+   6. file:///home/nilbus/git/minix/semtest.c
+   7. file:///home/nilbus/policies.html#grading

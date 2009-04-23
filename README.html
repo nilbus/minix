@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Homework 3</title>
+</head>
+<body>
+<div align=center>
+<div align=left style="font-family:sans-serif;width: 700px;">
+
+  <h1>CSC 246: Homework 3</h1>
+  <hr>
+  <b>Due:</b>
+  See home
+  <a href="../../index.html">page</a>.
+  
+  <hr>
+
+  <h1>Project 3: Semaphores</h1>
+
+  <p>
+  Students will create semaphores that can be used by user-space
+  processes and a producer-consumer program that uses semaphores.
+  </p>
+
+  <p>
+  Add an array of 10 semaphores
+  (using a &quot;constant&quot; such as <kbd>#define NUM_SEMAPHORES 10</kbd>)
+  to the <del>MM (memory manager)</del> PM (process manager) task.
+  Users will be able to access this array through the following four
+  new system calls.
+  The function prototypes for these calls will go in the file:
+  <blockquote>
+  <kbd>/usr/include/minix/semaphore.h</kbd>
+  </blockquote>
+  The following list describes the new system calls.
+  <ul>
+    <li><kbd>int sem_down(int sem_num);</kbd><br>
+    Performs the down (aka P or acquire) operation on the
+    <kbd>sem_num</kbd><sup>th</sup> semaphore in the array.
+    This routine may block.
+    It will return 0 on success (whether it blocks or not).
+    It returns -1 on failure, such as <kbd>sem_num</kbd> out of range.
+    </li>
+    
+    <li><kbd>int sem_up(int sem_num);</kbd><br>
+    Performs the up (aka V or release) operation on the
+    <kbd>sem_num</kbd><sup>th</sup> semaphore in the array.
+    It will return 0 on success.
+    It returns -1 on failure.
+    </li>
+    <li><kbd>int sem_init(int sem_num, int value);</kbd><br>
+    Set the <kbd>sem_num</kbd><sup>th</sup> semaphore in the array to
+    <kbd>value</kbd>, which must be non-negative.
+    It returns 0 on success, -1 on failure.
+    </li>
+    <li><kbd>int sem_status(int sem_num, int *value, int *num_blocked);</kbd><br>
+    Copies the value of the <kbd>sem_num</kbd><sup>th</sup> semaphore
+    in the array to memory location pointed to by <kbd>value</kbd>.
+    Also, copies the number of processes blocked on the semaphore to
+    the memory pointed to by <kbd>num_blocked</kbd>.
+    It returns 0 on success, -1 on failure.
+    </li>
+  </ul>
+  </p>
+
+  <p>
+  Because <del>MM</del> PM cannot be interrupted by a user process there is no need
+  to add synchronization (eg, mutex) to these system calls.
+  In other words, <del>MM</del> PM operations are <em>atomic</em> with respect to
+  user processes.
+  </p>
+
+  <p>
+  The second part of the assignment is to provide a producer-consumer
+  application that uses semaphores.
+  There are three programs.
+  <ul>
+    <li><em>prodconsinit</em><br>
+
+    This program will use a shared file to buffer the values that the
+    producer and later consumed.
+    It will use another file to hold any state variables.
+    This program will open and initialize the necessary shared files.
+    It also initializes the semaphores.
+    It takes (at least) one argument that is the size of the buffer.
+    <li><em>producer</em><br>
+    Creates one element and appends it to the buffer.
+    (Hint: see the <kbd>O_APPEND</kbd> flag to the <em>open</em>
+    system call.)
+    It blocks if the buffer is full.
+    It prints the element that was created.
+    </li>
+    <li><em>consumer</em><br>
+    Removes the element at the head of the buffer.
+    It blocks if the buffer is empty.
+    It prints the element that was removed.
+    </li>
+  </ul>
+  The <em>producer</em> and <em>consumer</em> must manipulate 
+  semaphores appropriately.
+  Provide a <em>README</em> file to explain how to use this
+    application.
+  
+  </p>
+
+  <p>
+  <a href="readwrite.c" >This</a>
+  file is provided to give an idea (not <strong>the
+  only</strong> idea) for reading and writing integers to files.
+  </p> 
+<hr>
+<h2>Adding a system call</h2>
+  <p>
+  This assignment requires four new system calls.
+  There are
+  <a href="http://www.google.com/search?hl=en&client=firefox-a&rls=com.ubuntu:en-US:unofficial&ei=5suSSaWPCM3dtgeOscjWCw&sa=X&oi=spell&resnum=1&ct=result&cd=1&q=minix3+add+system+call&spell=1" >numerous</a>
+  online resources explaining how to do this.
+  The
+  <a href="http://www.cis.syr.edu/~wedu/seed/Documentation/Minix3/How_to_add_system_call.pdf" >top</a>
+  hit is quite comprehensive and easy to read.
+  </p>
+  <p>
+  There are two parts to a system call.
+  One is the system call handler, which resides in the kernel.
+  The other is the user-level library, which invokes the system call.
+  Most Minix system calls are handled by a server.
+  For this assignment, the new system calls will go in the <del>MM</del> PM server.
+  </p>
+
+  <p>
+  A program, 
+  <a href="semtest.c" >semtest.c</a>,
+  is available to test the semaphore system calls.
+  It was compiled on Minix, but not using the semaphore system calls.
+  While it compiles and &quot;runs&quot; in the test configuration,
+  it comes with no warranty.
+  </p>
+  
+  <hr>
+  <h2>Requirements</h2>
+  <p>This assignment has two requirements.</p>
+  <blockquote style="background:lightgrey;padding:4">
+  <strong>System calls:</strong><br>
+  Four new system calls,
+  <em>sem_down, sem_up, sem_init,</em> and <em>sem_status</em>, added
+  to the <del>MM</del> PM server.
+  </blockquote>
+  <blockquote style="background:lightgrey;padding:4">
+  <strong>Producer-consumer application:</strong><br>
+  A producer-consumer application consisting of three programs,
+  <em>prodconsinit, producer,</em> and <em> consumer</em>,
+  that use the above semaphore system calls.
+  </blockquote>
+
+<hr>
+<h2>Testing</h2>
+<p>
+As usual, a good-faith effort that compiles and does no harm is half
+the battle.
+Therefore, the first part of our evaluation
+will establish that and earns
+approximately 50%.
+The second part tests the four new system calls.
+System calls that work to perfection earn approximately 30% more.
+This will be determined solely using
+<a href="semtest.c" >semtest.c</a>.
+The producer-consumer application will earn the last 20% (approx.).
+However, if this application is not submitted, or if it is deemed to
+not be a good-faith effort, points may be deducted.
+</p>
+  
+<hr>
+<h2>Grading</h2>
+The weighting of this assignment for the course is given in
+<a href="../../policies.html#grading">policies</a>. 
+
+<hr>
+
+</div>
+</div>
+</body></html>
