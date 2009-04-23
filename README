@@ -1,0 +1,107 @@
+                              CSC 246: Homework 1
+
+   --------------------------------------------------------------------------
+
+Due: See home [1]page.
+
+   --------------------------------------------------------------------------
+
+                   Project 1: A gentle introduction to Minix
+
+   This assignment has several parts. In the first part, students need to
+   setup a Minix environment. It is recommended that students use a Minix
+   virtual machine (VM). In the remaining parts, students will edit Minix
+   source and compile a new Minix3 image. The specifics for these parts
+   follows.
+
+Part A: VMM and Minix3
+
+   The VCL image for Minix3 is being constructed.
+
+   Students may elect to install a VMM on their own machines. This will
+   likely prove very useful, even if the VCL image is the primary development
+   platform. The recommended virtual machine monitor is [2]VMware Server,
+   which can be [3]downloaded for [4]free. Instructions for installing VMware
+   and Minix3 are given in [5]this message board post.
+
+   Students may use a different VMM. Such examples include, but are not
+   limited to, [6]VirtualBox, [7]Xen, [8]Qemu, and [9]Bochs. The last two are
+   technically emulators, meaning the performance will be much less than with
+   a VMM.
+
+  Requirements
+
+   Students must produce a Minix command prompt from their own installation.
+
+   This part will not be graded explicitly. However, it is a necessary step
+   to for the other parts.
+
+Part B: OS_VERSION
+
+   Students will change the version of a Minix installation. There is a
+   constant, OS_VERSION, that holds the version string. It is "1.2a" by
+   default.
+
+  Requirements
+
+   Make the OS version be "1.2" followed by your Unity ID.
+
+   You need to edit /usr/src/include/minix/config.h and recompile the kernel.
+   To recompile and install execute "make install" from the /usr/src/
+   directory.
+
+   Two things that should occur. First, there should be a new image in
+   /boot/image. In my case the image is: /boot/image/3.1.2vwfreeh. You can
+   execute this new image by running the "reboot" command. This will execute
+   the most recent image in the /boot/image directory. The name of the OS
+   version will be displayed when it boots. If you miss it type: "grep
+   /usr/log/messages". Or alternatively, you can execute "uname -a". However,
+   this only prints 5 characters.
+
+Part C: getty
+
+   Change the startup banner for tty.
+
+   Edit the file getty.c. Add the characters "CSC246: " (include the space)
+   to the banner. After you recompile and install, the banner on each tty
+   should begin:
+
+     CSC246: Minix Release ...
+
+  Requirements
+
+   System outputs the proper tty banner.
+
+Part D: Information Server
+
+   The IS (information server) is special Minix process that provide
+   information about the running kernel. One feature it supports is printing
+   information at the press of an F-key. Try pressing Shift-F5.
+
+   The file /usr/src/servers/is/dmp.c Contains code that maps F-keys to
+   functions. Modify this file to call a routine you created to display your
+   Unity ID when the F8 key is pressed.
+
+  Requirements
+
+   F8 key displays student's unity ID
+
+   --------------------------------------------------------------------------
+
+  Grading:
+
+See grading [10]section the course policies.
+
+References
+
+   Visible links
+   1. file:///home/nilbus/index.html
+   2. http://www.vmware.com/products/server/
+   3. http://www.vmware.com/download/server/getserver.html
+   4. http://www.wired.com/wired/archive/14.09/posts.html?pg=6
+   5. http://wolfware.ncsu.edu/wrap-bin/mesgboard/csc:246::001:1:2009?task=ST&Forum=0&Topic=1
+   6. http://www.virtualbox.org/
+   7. http://www.xen.org/
+   8. http://bellard.org/qemu/
+   9. http://bochs.sourceforge.net/
+  10. file:///home/nilbus/policies.html#grading
