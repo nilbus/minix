@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Homework 2</title>
+</head>
+<body>
+<div align=center>
+<div align=left style="font-family:sans-serif;width: 700px;">
+<h1>CSC 246: Homework 2</h1>
+<hr>
+<b>Due:</b>
+See home
+<a href="../../index.html">page</a>.
+
+<hr>
+
+<h1>Project 2: Lottery Scheduler</h1>
+
+
+  <p>In this project students will implement a
+  <a href="http://en.wikipedia.org/wiki/Lottery_Scheduling" >lottery scheduler</a>,
+  which was introduced in this
+  <a href="http://www.usenix.org/publications/library/proceedings/osdi/full_papers/waldspurger.pdf" >paper</a>.
+  </p>
+
+  <blockquote style="background:lightsteelblue; padding:4">
+  Note: I found this
+  <a href="http://www.soe.ucsc.edu/classes/cmps111/Spring06/proj2.shtml" >link</a>
+  to a similar project as I was writing up this assignment.
+  </blockquote>
+  
+  <p>
+  A lottery scheduler provides probabilistic, fair sharing scheduling.
+  Processes are given a number of tickets.
+  At each scheduling point a &quot;lottery&quot; is conducted.
+  The process whose &quot;ticket is chosen&quot; runs.
+  The more tickets a process has, the greater its chance of running.
+  </p>
+  <p>
+  For example, suppose there are 5 processes in the ready queue (they
+  are waiting to execute) and each has 20 tickets. 
+  There are 100 tickets in this scheduling lottery.
+  The scheduler randomly &quot;selects&quot; one of the 100 tickets
+  (eg, <tt>ticket_number = random()%100;</tt>)
+  </p>
+  <p>
+  In the above example, each process has an equal chance (20%) of being
+  selected.
+  Of course processes need not have the same number of tickets.
+  Suppose one of these 5 processes is given an additional 60 tickets
+  for a total of 80.
+  Then it has a 50% (80/160) chance of winning the lottery, the others
+  have a 12.5% chance of running (20/160).
+  </p>
+
+  <h2>Details</h2>
+
+  <blockquote style="background:goldenrod; padding:4">
+  <em><u>Update 04 Feb 09</u></em><br/>
+  Here I describe a second improvement of this assignment.
+  I had some difficulties because I was lottery scheduling
+  <strong>all</strong> processes&shy;even system tasks.
+  The instructional value of the assignment does not change if one
+  restricts the lottery scheduler to user processes.
+Therefore, in the revised assignment leave the priority queue system
+  in place for priorities 0-6 and 15.
+Only use the lottery scheduler on the user processes (which are at
+  priorities 7-14).
+<p>
+<strong>Note:</strong>
+you may implement either this revised solution or the previous
+  solution.
+</blockquote>
+  
+  <blockquote style="background:pink; padding:4">
+  After some thought, I have improved my initial design.
+  New text is presented in <font color="blue">blue</font>.
+  The <del>strikeout</del> shows the original explanation that has
+  been rescinded or improved.
+  </blockquote>
+
+  <p>
+  All files names are relative to <tt>/usr/src</tt>.
+  </p>
+
+<p style="color:blue">
+The number of tickets and the numeric priority value are inversely
+related.
+The highest priority is 0 (zero), which has the most tickets.
+A simple way to assign tickets is to give each process a number of
+tickets as a function of its priority.
+Use the following scheme, which makes each priority level twice and likely
+to win a lottery.
+(Keep the number of priorities the same as in standard Minix, which is 16.)
+</p>
+<blockquote style="color:blue">
+tickets = 2 ** (NUMBER_OF_PRIORITIES - priority);
+</blockquote>
+<p style="color:blue">
+You can calculate a processes tickets eagerly or lazily.
+In eager, you will maintain a per process field, say
+&quot;tickets,&quot; that holds the number of tickets.
+This must be set initially (when process is created) and updated when
+process priority changes.
+On the other hand, the lazy method calculates the number of tickets
+for each process in the ready queue each scheduling event.
+Both methods are equivalent in how they execute, but the
+implementation and the overhead differ.
+</p>
+<p style="color:blue">
+<font color=black>The process scheduler is in <tt>kernel/proc.c</tt>.
+  You are interested in the routines <em>pick_proc</em>
+  and <em>sched</em>.</font>
+In standard Minix, <em>sched</em> moves processes within and among the
+16 ready queues.
+Modify <em>sched</em> to accommodate the new queue usage in lottery
+schedule.
+In particular, there are fewer queues and the FIFO order is
+irrelevant.
+</p>
+<p style="color:blue">
+In standard Minix,
+<em>pick_proc</em> selects the next process to run.
+It picks the process at the head of the highest priority non-empty
+queue.
+In the lottery scheduler, <em>pick_proc</em> will hold a lottery.
+</p>
+<p style="color:blue">
+
+</p>
+<p>
+
+   You <font color="blue">may</font>
+<del>will likely</del> want to edit some values in
+  <kbd>kernel/proc.h</kbd>.
+  In particular, a field
+<font color="blue">may</font>
+<del>must</del> be added to the process descriptor to
+  hold the number of tickets assigned to a process.
+  </p>
+  <p>
+  The new ticket field (and any others you add) must be initialized.
+  This can be done in the routine <em>do_fork</em> in the file
+<kbd>kernel/system/do_fork.c</kbd>.
+But it isn't sufficient if you wish to support changing of priorities.
+(You do.)
+Therefore, you should update the ticket field when the priorities
+  change.
+This is done in routine <em>do_getsetpriority</em> in file
+<kbd>servers/pm/misc.c</kbd>.
+  </p>
+
+<h2>Suggestions</h2>
+<p>
+The following points are suggestions about how to design/implement
+this project.
+None of these are required.
+</p>
+<p>
+The standard Minix scheduler has 16 queues.
+From <kbd>kernel/proc.h</kbd>:
+<blockquote><kbd>#define NR_SCHED_QUEUES   16	/* MUST equal minimum priority + 1 */
+</kbd></blockquote>
+But this is more than you need.
+I suggest using two queues.
+Put the <em>NIL_PROC</em> in the second queue,
+<kbd>rdy_head[1]</kbd>, and <em>only</em> it.
+Use the first queue, <kbd>rdy_head[0]</kbd>, for all user processes.
+</p>
+<p>
+There is a random number generator in the library, routine
+<em>random</em> in file
+<kbd>lib/other/random.c</kbd>.
+It is not possible to make a library call from the kernel.
+But you can copy this code into the kernel.
+I suggest you use the simpler algorithm (TYPE_0).
+You will need global state that must be initialized.
+In the beginning, you should always initialize it to the same value.
+This will ensure that you generate the same sequence of pseudo-random
+numbers each time.
+However, for full credit, you need to initialize the state to a
+&quot;random&quot; value on start-up.
+</p>
+<p>
+Implement your design in small pieces.
+Testing each piece before moving on to the next piece.
+Here are a few example steps to take.
+<ol>
+  <li>
+  Add a printf statement in <em>sched</em> that prints info on the
+  process begin scheduled.
+  </li>
+  <li>Add a printf statement in <em>pick_proc</em> that prints info
+  about the processes on the ready queue(s).</li>
+  <li><font color="blue">Optional:</font>
+  Add ticket field to proc structure and initizialize it.
+  Modify one of your print statements in order to verify that you are
+  initializing the ticket field correctly.
+  </li>
+  <li>Reduce the number of queues to 2 and put all processes except
+  the <em>NIL_PROC</em> on queue[0].
+  (Change your printf statement if necessary.)
+  </li>
+  <li>Modify <em>sched</em> so that is does not change the priority.
+  You don't care about the <em>front</em> variable either, so you can
+  simplify that as well.
+  </li>
+  <blockquote>Note: Up to this point you haven't done any lottery
+  scheduling.</blockquote>
+  <li>Modify <em>pick_proc</em> to hold a lottery.</li>
+</ol>
+</p>
+<p>
+Another suggestion is to use the &quot;snapshot&quot; and
+&quot;revert&quot;
+<a href="http://www.google.com/search?hl=en&client=firefox-a&rls=com.ubuntu%3Aen-US%3Aunofficial&hs=7IS&q=vmware+server+snapshot&btnG=Search" >mechanism</a>
+in VMware.
+Before making changes to between the above steps, take a snapshot.
+Make sure the snapshot is of a working system.
+Then make your edits and compile.
+If the new system is not working. you can revert to the snapshot and
+try again.
+Obviously, the edits you made after the snapshot will be lost, so use
+this with caution, incrementally, and intensionally.
+</p>
+<h2>Testing</h2>
+<p>We will test your code for the following.</p>
+<p>
+First, it must compile and run processes.
+This is not a small requirement and will be graded accordingly.
+<blockquote style="background:lightgrey">
+<h3>Requirement</h3>
+Allow users to login and run processes.
+</blockquote>
+</p>
+<p>Second, it must hold valid lotteries.  We will test this in two ways.
+(1) Given a small set of equal priority processes, make sure processes do not
+run in a strict round-robin, FIFO fashion.
+<blockquote style="background:lightgrey">
+<h3>Requirement</h3>
+Execute 5 equal priority processes such that the execution order is
+not FIFO (or any other static pattern) yet the processor is shared
+more or less equally among the processes.
+</blockquote>
+(2) Given a small set of processes with vastly different priorities,
+make sure that higher priority processes are scheduled more often
+(roughly equal to their proportion of tickets).
+<blockquote style="background:lightgrey">
+<h3>Requirement</h3>
+Execute 5 equal priority processes such that the execution order is
+not a static pattern and the processor is shared
+proportionally based on the priority.
+</blockquote>
+</p>
+<hr>
+
+<h3>Grading:</h3>
+The weighting of this assignment for the course is given in
+<a href="../../policies.html#grading">policies</a>. 
+
+<hr>
+
+</div>
+</div>
+</body></html>

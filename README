@@ -1,0 +1,185 @@
+                              CSC 246: Homework 2
+
+   --------------------------------------------------------------------------
+
+Due: See home [1]page.
+
+   --------------------------------------------------------------------------
+
+                          Project 2: Lottery Scheduler
+
+   In this project students will implement a [2]lottery scheduler, which was
+   introduced in this [3]paper.
+
+  Note: I found this [4]link to a similar project as I was writing up this
+  assignment.
+
+   A lottery scheduler provides probabilistic, fair sharing scheduling.
+   Processes are given a number of tickets. At each scheduling point a
+   "lottery" is conducted. The process whose "ticket is chosen" runs. The
+   more tickets a process has, the greater its chance of running.
+
+   For example, suppose there are 5 processes in the ready queue (they are
+   waiting to execute) and each has 20 tickets. There are 100 tickets in this
+   scheduling lottery. The scheduler randomly "selects" one of the 100
+   tickets (eg, ticket_number = random()%100;)
+
+   In the above example, each process has an equal chance (20%) of being
+   selected. Of course processes need not have the same number of tickets.
+   Suppose one of these 5 processes is given an additional 60 tickets for a
+   total of 80. Then it has a 50% (80/160) chance of winning the lottery, the
+   others have a 12.5% chance of running (20/160).
+
+Details
+
+  Update 04 Feb 09
+  Here I describe a second improvement of this assignment. I had some
+  difficulties because I was lottery scheduling all processeseven system tasks.
+  The instructional value of the assignment does not change if one restricts the
+  lottery scheduler to user processes. Therefore, in the revised assignment
+  leave the priority queue system in place for priorities 0-6 and 15. Only use
+  the lottery scheduler on the user processes (which are at priorities 7-14).
+
+   Note: you may implement either this revised solution or the previous
+   solution.
+
+  After some thought, I have improved my initial design. New text is presented
+  in blue. The strikeout shows the original explanation that has been rescinded
+  or improved.
+
+   All files names are relative to /usr/src.
+
+   The number of tickets and the numeric priority value are inversely
+   related. The highest priority is 0 (zero), which has the most tickets. A
+   simple way to assign tickets is to give each process a number of tickets
+   as a function of its priority. Use the following scheme, which makes each
+   priority level twice and likely to win a lottery. (Keep the number of
+   priorities the same as in standard Minix, which is 16.)
+
+  tickets = 2 ** (NUMBER_OF_PRIORITIES - priority);
+
+   You can calculate a processes tickets eagerly or lazily. In eager, you
+   will maintain a per process field, say "tickets," that holds the number of
+   tickets. This must be set initially (when process is created) and updated
+   when process priority changes. On the other hand, the lazy method
+   calculates the number of tickets for each process in the ready queue each
+   scheduling event. Both methods are equivalent in how they execute, but the
+   implementation and the overhead differ.
+
+   The process scheduler is in kernel/proc.c. You are interested in the
+   routines pick_proc and sched. In standard Minix, sched moves processes
+   within and among the 16 ready queues. Modify sched to accommodate the new
+   queue usage in lottery schedule. In particular, there are fewer queues and
+   the FIFO order is irrelevant.
+
+   In standard Minix, pick_proc selects the next process to run. It picks the
+   process at the head of the highest priority non-empty queue. In the
+   lottery scheduler, pick_proc will hold a lottery.
+
+   You may will likely want to edit some values in kernel/proc.h. In
+   particular, a field may must be added to the process descriptor to hold
+   the number of tickets assigned to a process.
+
+   The new ticket field (and any others you add) must be initialized. This
+   can be done in the routine do_fork in the file kernel/system/do_fork.c.
+   But it isn't sufficient if you wish to support changing of priorities.
+   (You do.) Therefore, you should update the ticket field when the
+   priorities change. This is done in routine do_getsetpriority in file
+   servers/pm/misc.c.
+
+Suggestions
+
+   The following points are suggestions about how to design/implement this
+   project. None of these are required.
+
+   The standard Minix scheduler has 16 queues. From kernel/proc.h:
+
+     #define NR_SCHED_QUEUES 16 /* MUST equal minimum priority + 1 */
+
+   But this is more than you need. I suggest using two queues. Put the
+   NIL_PROC in the second queue, rdy_head[1], and only it. Use the first
+   queue, rdy_head[0], for all user processes.
+
+   There is a random number generator in the library, routine random in file
+   lib/other/random.c. It is not possible to make a library call from the
+   kernel. But you can copy this code into the kernel. I suggest you use the
+   simpler algorithm (TYPE_0). You will need global state that must be
+   initialized. In the beginning, you should always initialize it to the same
+   value. This will ensure that you generate the same sequence of
+   pseudo-random numbers each time. However, for full credit, you need to
+   initialize the state to a "random" value on start-up.
+
+   Implement your design in small pieces. Testing each piece before moving on
+   to the next piece. Here are a few example steps to take.
+
+    1. Add a printf statement in sched that prints info on the process begin
+       scheduled.
+    2. Add a printf statement in pick_proc that prints info about the
+       processes on the ready queue(s).
+    3. Optional: Add ticket field to proc structure and initizialize it.
+       Modify one of your print statements in order to verify that you are
+       initializing the ticket field correctly.
+    4. Reduce the number of queues to 2 and put all processes except the
+       NIL_PROC on queue[0]. (Change your printf statement if necessary.)
+    5. Modify sched so that is does not change the priority. You don't care
+       about the front variable either, so you can simplify that as well.
+
+         Note: Up to this point you haven't done any lottery scheduling.
+
+    6. Modify pick_proc to hold a lottery.
+
+   Another suggestion is to use the "snapshot" and "revert" [5]mechanism in
+   VMware. Before making changes to between the above steps, take a snapshot.
+   Make sure the snapshot is of a working system. Then make your edits and
+   compile. If the new system is not working. you can revert to the snapshot
+   and try again. Obviously, the edits you made after the snapshot will be
+   lost, so use this with caution, incrementally, and intensionally.
+
+Testing
+
+   We will test your code for the following.
+
+   First, it must compile and run processes. This is not a small requirement
+   and will be graded accordingly.
+
+  Requirement
+
+     Allow users to login and run processes.
+
+   Second, it must hold valid lotteries. We will test this in two ways. (1)
+   Given a small set of equal priority processes, make sure processes do not
+   run in a strict round-robin, FIFO fashion.
+
+  Requirement
+
+     Execute 5 equal priority processes such that the execution order is not
+     FIFO (or any other static pattern) yet the processor is shared more or
+     less equally among the processes.
+
+   (2) Given a small set of processes with vastly different priorities, make
+   sure that higher priority processes are scheduled more often (roughly
+   equal to their proportion of tickets).
+
+  Requirement
+
+     Execute 5 equal priority processes such that the execution order is not
+     a static pattern and the processor is shared proportionally based on the
+     priority.
+
+   --------------------------------------------------------------------------
+
+  Grading:
+
+The weighting of this assignment for the course is given in [6]policies.
+
+   --------------------------------------------------------------------------
+
+References
+
+   Visible links
+   1. file:///home/nilbus/index.html
+   2. http://en.wikipedia.org/wiki/Lottery_Scheduling
+   3. http://www.usenix.org/publications/library/proceedings/osdi/full_papers/waldspurger.pdf
+   4. http://www.soe.ucsc.edu/classes/cmps111/Spring06/proj2.shtml
+   5. http://www.google.com/search?hl=en&client=firefox-a&rls=com.ubuntu%3Aen-US%3Aunofficial&hs=7IS&q=vmware+server+snapshot&btnG=Search
+   6. file:///home/nilbus/policies.html#grading
