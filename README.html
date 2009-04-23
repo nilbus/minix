@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Homework 4</title>
+</head>
+<body>
+<div align=center>
+<div align=left style="font-family:sans-serif;width: 700px;">
+
+  <h1>CSC 246: Homework 4</h1>
+  <hr>
+  <b>Due:</b>
+  See home
+  <a href="../../index.html">page</a>.
+  <br/>
+  <span style="color:red">Added clarifying text in red on 2 Apr 2009</span>
+  <hr>
+
+  <h1>Project 4: Simple Debugger</h1>
+
+  <p>
+  Students will write <i>sdb</i> for Minix that controls a programs
+  execution.
+  This is not really a debugger.
+  But it performs a few basic steps that a debugger would have to do.
+  </p>
+
+  <p>
+  A debugger runs the target program as a child process.
+  Then it uses the <i>ptrace</i> system call to control the child
+  process.
+  Surprisingly, the best discussion that I could find is on
+  <a href="http://t-a-w.blogspot.com/2007/03/how-to-code-debuggers.html
+" >this</a>
+  blog post.
+  </p>
+  <p>
+  Your task is quite a bit short of a symbolic debugger.
+  Sdb has three parts.
+  First, it will create a child process.
+  Second, it will pause/resume a process.
+  Finally, it will display register values.
+  </p>
+  <p>
+  These tasks are a subset of those performed by the
+  Minix debugger, mdb.
+  Source is in <tt>/usr/src/commands/mdb/</tt>.
+  You are expected to examine this code and use any that you
+  understand.
+  I repeat: you may use any code in this directory.
+  </p>
+  <h3>Features of sdb</h3>
+  <p>
+  Sdb is invoked as:
+  <blockquote>sdb command [arg arg1 arg2 ...]</blockquote>
+  At least one argument is required.
+  It is the name of an executable file that is to be traced.
+  The remaining arguments are passed to the command.
+  Consider the following:
+  <blockquote>% sdb ls<br/>% sdb ls -l</blockquote>
+  </p>
+  <h3>Creating a child process</h3>
+  <p>
+  There are two calls required to create a child process:
+  <i>fork</i> and <i>execve</i>.
+  There are several flavors of the latter call.
+  In particular, look at <i>execvp</i>.
+  </p>
+  <h3>Sdb commands</h3>
+  <p>
+  The Minix <i>ptrace</i> command has several arguments, see
+  <kbd>/usr/src/include/sys/ptrace.h</kbd>.
+  (Do not refer to the manual page--man ptrace.)
+  Sdb presents an interface for some of these arguments.
+  </p>
+<p>
+There are three sdb commands.
+<dl>
+  <dt>s
+  <dd><b>step</b> the program.  Run the program for one "step" as
+  "defined" by the <tt>T_STEP</tt> parameter to <i>ptrace</i>.
+  <dt>f
+  <dd><b>finish</b> the program.  Let the program run to completion
+  without stp interrupting it again.
+  <dt>p <span style="color:red">&lt;n&gt;</span>
+  <dd><b>print</b> the n<sup>th</sup> register.
+    <span style="color:red">There is a space between &quot;p&quot; and the
+  register number</span>
+</dl>
+</p>
+<p>
+For the "p" command you will use the <kbd>T_GETUSER</kbd> parameter.
+This returns values from the process table.
+Register values are contained in the process table.
+See the routines <i>get_reg</i> and <i>reg_addr</i> in the file
+<kbd>/usr/src/commands/mdb/kernel.c</kbd>.
+</p>
+<p>
+In order for <i>ptrace</i> to work, the child must allow tracing.
+The child must call <i>ptrace</i> with the <kbd>T_OK</kbd> flag.
+Do this before <i>exec</i>ing.
+</p>
+<hr>
+<h2>Turnin</h2>
+<p>
+This assignment does not require a modification of the Minix.
+Therefore, you will turnin the source files, including a Makefile.
+Submit the files as a tar or zip archive.
+Be absolutely certain that the Makefile creates an executable called
+'sdb'.
+
+</p>
+<hr>
+<h2>Grading</h2>
+The weighting of this assignment for the course is given in
+<a href="../../policies.html#grading">policies</a>. 
+
+<hr>
+
+</div>
+</div>
+</body></html>

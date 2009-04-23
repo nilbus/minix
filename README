@@ -1,0 +1,98 @@
+                              CSC 246: Homework 4
+
+   --------------------------------------------------------------------------
+
+Due: See home [1]page.
+Added clarifying text in red on 2 Apr 2009
+
+   --------------------------------------------------------------------------
+
+                           Project 4: Simple Debugger
+
+   Students will write sdb for Minix that controls a programs execution. This
+   is not really a debugger. But it performs a few basic steps that a
+   debugger would have to do.
+
+   A debugger runs the target program as a child process. Then it uses the
+   ptrace system call to control the child process. Surprisingly, the best
+   discussion that I could find is on [2]this blog post.
+
+   Your task is quite a bit short of a symbolic debugger. Sdb has three
+   parts. First, it will create a child process. Second, it will pause/resume
+   a process. Finally, it will display register values.
+
+   These tasks are a subset of those performed by the Minix debugger, mdb.
+   Source is in /usr/src/commands/mdb/. You are expected to examine this code
+   and use any that you understand. I repeat: you may use any code in this
+   directory.
+
+  Features of sdb
+
+   Sdb is invoked as:
+
+     sdb command [arg arg1 arg2 ...]
+
+   At least one argument is required. It is the name of an executable file
+   that is to be traced. The remaining arguments are passed to the command.
+   Consider the following:
+
+     % sdb ls
+     % sdb ls -l
+
+  Creating a child process
+
+   There are two calls required to create a child process: fork and execve.
+   There are several flavors of the latter call. In particular, look at
+   execvp.
+
+  Sdb commands
+
+   The Minix ptrace command has several arguments, see
+   /usr/src/include/sys/ptrace.h. (Do not refer to the manual page--man
+   ptrace.) Sdb presents an interface for some of these arguments.
+
+   There are three sdb commands.
+
+   s
+           step the program. Run the program for one "step" as "defined" by
+           the T_STEP parameter to ptrace.
+
+   f
+           finish the program. Let the program run to completion without stp
+           interrupting it again.
+
+   p <n>
+           print the n^th register. There is a space between "p" and the
+           register number
+
+   For the "p" command you will use the T_GETUSER parameter. This returns
+   values from the process table. Register values are contained in the
+   process table. See the routines get_reg and reg_addr in the file
+   /usr/src/commands/mdb/kernel.c.
+
+   In order for ptrace to work, the child must allow tracing. The child must
+   call ptrace with the T_OK flag. Do this before execing.
+
+   --------------------------------------------------------------------------
+
+Turnin
+
+   This assignment does not require a modification of the Minix. Therefore,
+   you will turnin the source files, including a Makefile. Submit the files
+   as a tar or zip archive. Be absolutely certain that the Makefile creates
+   an executable called 'sdb'.
+
+   --------------------------------------------------------------------------
+
+Grading
+
+The weighting of this assignment for the course is given in [3]policies.
+
+   --------------------------------------------------------------------------
+
+References
+
+   Visible links
+   1. file:///home/nilbus/index.html
+   2. http://t-a-w.blogspot.com/2007/03/how-to-code-debuggers.html
+   3. file:///home/nilbus/policies.html#grading
