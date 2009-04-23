@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Homework 1</title>
+</head>
+<body>
+<div align=center>
+<div align=left style="font-family:sans-serif;width: 800px;">
+<h1>CSC 246: Homework 1</h1>
+<hr>
+<b>Due:</b>
+See home
+<a href="../../index.html">page</a>.
+
+<hr>
+<h1>Project 1: A gentle introduction to Minix</h1>
+<p>
+  This assignment has several parts.
+  In the first part, students need to setup a Minix environment.
+  It is recommended that students use a Minix virtual machine (VM).
+  In the remaining parts, students will edit Minix source and 
+  compile a new Minix3 image.
+  The specifics for these parts follows.
+  </p>
+
+  <h2>Part A: VMM and Minix3</h2>
+
+  <p style="background-color:pink">The VCL image for Minix3 is being constructed.</p>
+  <p>Students may elect to install a VMM on their own machines.
+  This will likely prove very useful, even if the VCL image is the
+  primary development platform.
+  The recommended virtual machine monitor is
+  <a href="http://www.vmware.com/products/server/">VMware Server</a>,
+  which can be
+  <a href="http://www.vmware.com/download/server/getserver.html">
+  downloaded</a> for
+  <a href="http://www.wired.com/wired/archive/14.09/posts.html?pg=6">free</a>.
+  Instructions for installing VMware and Minix3 are given in
+  <a href="http://wolfware.ncsu.edu/wrap-bin/mesgboard/csc:246::001:1:2009?task=ST&Forum=0&Topic=1" >this</a>
+  message board post.
+  </p>
+  <p>Students may use a different VMM.
+  Such examples include, but are not limited to,
+  <a href="http://www.virtualbox.org/" >VirtualBox</a>,
+  <a href="http://www.xen.org/" >Xen</a>,
+  <a href="http://bellard.org/qemu/" >Qemu</a>, and
+  <a href="http://bochs.sourceforge.net/" >Bochs</a>.
+  The last two are technically <i>emulators</i>, meaning the
+  performance will be much less than with a VMM.
+  </p>
+<blockquote style="background:lightgrey">
+  <h3>Requirements</h3>
+  <p>Students must produce a Minix command prompt from their own installation.</p>
+</blockquote>
+  <p>
+  This part will not be graded explicitly.
+  However, it is a necessary step to for the other parts.
+  </p>
+
+  <h2>Part B: OS_VERSION</h2>
+<p>Students will change the version of a Minix installation.
+There is a constant, <tt>OS_VERSION</tt>, that holds the version
+string.
+It is &quot;1.2a&quot; by default.
+  </p>
+<blockquote style="background:lightgrey">
+<h3>Requirements</h3>
+<p>Make the OS version be &quot;1.2&quot; followed by your Unity ID.
+</p>
+</blockquote>
+
+<p>You need to edit <tt>/usr/src/include/minix/config.h</tt> and
+recompile the kernel.
+To recompile and install execute &quot;make install&quot; from the
+<tt>/usr/src/</tt> directory.
+</p>
+
+<p>Two things that should occur.
+First, there should be a new image in <tt>/boot/image</tt>.
+In my case the image is: <tt>/boot/image/3.1.2vwfreeh</tt>.
+You can execute this new image by running the &quot;reboot&quot;
+command.
+This will execute the most recent image in the <tt>/boot/image</tt>
+directory.
+The name of the OS version will be displayed when it boots.
+If you miss it type: &quot;grep <unityid> /usr/log/messages&quot;.
+Or alternatively, you can execute &quot;uname -a&quot;.
+However, this only prints 5 characters.
+</p>
+
+<h2>Part C: getty</h2>
+
+<p>Change the startup banner for tty.</p>
+
+<p>Edit the file <tt>getty.c</tt>.
+Add the characters &quot;CSC246:&nbsp;&quot; (include the space) to
+the banner.
+After you recompile and install, the banner on each tty should begin:
+<blockquote>
+CSC246: Minix  Release ...
+</blockquote>
+</p>
+<blockquote style="background:lightgrey">
+<h3>Requirements</h3>
+<p>System outputs the proper tty banner.</p>
+</blockquote>
+
+<h2>Part D: Information Server</h2>
+<p>The IS (information server) is special Minix process that provide
+information about the running kernel.
+One feature it supports is printing information at the press of an
+F-key.
+Try pressing Shift-F5.
+</p>
+<p>The file <tt>/usr/src/servers/is/dmp.c</tt>
+Contains code that maps F-keys to functions.
+Modify this file to call a routine you created to display your Unity
+ID when the F8 key is pressed.
+</p>
+<blockquote style="background:lightgrey">
+<h3>Requirements</h3>
+<p>F8 key displays student's unity ID</p>
+</blockquote>
+
+<hr>
+<h3>Grading:</h3>
+  See grading <a href="../../policies.html#grading">section</a> the
+  course policies.  
+
+</div>
+</div>
+</body></html>
